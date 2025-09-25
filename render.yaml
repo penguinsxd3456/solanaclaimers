@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: claimrentsol-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: COMMISSION_ADDRESS
+        sync: false
