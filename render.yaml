@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: claimrentsol-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: HELIUS_KEY
+        sync: false
+      - key: COMMISSION_ADDRESS
+        sync: false
